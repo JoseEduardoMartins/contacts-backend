@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "fd7f2f40-7b81-4af0-966b-fbba594a2fbd",
+		"name": "api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17217580"
+	},
+	"item": [
+		{
+			"name": "contacts",
+			"item": [
+				{
+					"name": "find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PATH}}/api/contacts?name=teste2",
+							"host": [
+								"{{PATH}}"
+							],
+							"path": [
+								"api",
+								"contacts"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "teste2"
+								},
+								{
+									"key": "age",
+									"value": "12",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PATH}}/api/contacts/2",
+							"host": [
+								"{{PATH}}"
+							],
+							"path": [
+								"api",
+								"contacts",
+								"2"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "teste",
+									"disabled": true
+								},
+								{
+									"key": "age",
+									"value": "12",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"teste\",\n    \"age\": 19,\n    \"phones\": [\n        {\n            \"number\": \"48 99999-9999\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PATH}}/api/contacts",
+							"host": [
+								"{{PATH}}"
+							],
+							"path": [
+								"api",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"teste1\",\n    \"age\": 191,\n    \"phones\": [\n        {\n            \"number\": \"48 99999-99891\"\n        },\n        {\n            \"number\": \"48 99999-99991\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PATH}}/api/contacts/2",
+							"host": [
+								"{{PATH}}"
+							],
+							"path": [
+								"api",
+								"contacts",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{PATH}}/api/contacts/1",
+							"host": [
+								"{{PATH}}"
+							],
+							"path": [
+								"api",
+								"contacts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "phones",
+			"item": [
+				{
+					"name": "find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PATH}}/api/phones?number=48 99999-9999",
+							"host": [
+								"{{PATH}}"
+							],
+							"path": [
+								"api",
+								"phones"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "number",
+									"value": "48 99999-9999"
+								},
+								{
+									"key": "contactId",
+									"value": "13",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PATH}}/api/phones/1",
+							"host": [
+								"{{PATH}}"
+							],
+							"path": [
+								"api",
+								"phones",
+								"1"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "teste",
+									"disabled": true
+								},
+								{
+									"key": "age",
+									"value": "12",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"48 99999-9999\",\n    \"contactId\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PATH}}/api/phones",
+							"host": [
+								"{{PATH}}"
+							],
+							"path": [
+								"api",
+								"phones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"48 99999-9989\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PATH}}/api/phones/7",
+							"host": [
+								"{{PATH}}"
+							],
+							"path": [
+								"api",
+								"phones",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{PATH}}/api/phones/6",
+							"host": [
+								"{{PATH}}"
+							],
+							"path": [
+								"api",
+								"phones",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{PATH}}/api/status",
+					"host": [
+						"{{PATH}}"
+					],
+					"path": [
+						"api",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
