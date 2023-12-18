@@ -1,4 +1,4 @@
-# Node.js Contact Management System
+# Contact Management System
 
 Este projeto é um sistema simples de gerenciamento de contatos desenvolvido em Node.js, com uma base de dados MySQL para armazenar informações de contato e seus números de telefone associados.
 
