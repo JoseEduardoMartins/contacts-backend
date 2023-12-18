@@ -2,7 +2,6 @@
 
 Este projeto é um sistema simples de gerenciamento de contatos desenvolvido em Node.js, com uma base de dados MySQL para armazenar informações de contato e seus números de telefone associados.
 
-
 ## Pré-requisitos
 
 Certifique-se de ter as seguintes dependências instaladas antes de iniciar:
@@ -51,6 +50,32 @@ cd contacts-backend
 npm run dev
 ```
 
+O servidor estará disponível em http://localhost:3000.
+
+## Uso
+
+Acesse a API para gerenciar contatos e números de telefone.
+
+-   Listar todos os contatos: GET /contacts/
+-   Obter um contato específico: GET /contacts/:id
+-   Criar um novo contato: POST /contacts/
+-   Atualizar um contato existente: PUT /contacts/:id
+-   Excluir um contato: DELETE /contacts/:id
+
+## Exemplo de Payload para Criação/Atualização de Contato
+
+```script
+{
+    "name": "Nome do Contato",
+    "age": 20,
+    "phones": [
+        {
+            "number": "99 99999-99999"
+        },
+    ]
+}
+```
+
 ## Contribuição
 
 Sinta-se à vontade para contribuir com melhorias, correções de bugs ou novos recursos para este microserviço. Basta seguir estas etapas:
@@ -72,5 +97,3 @@ Este projeto é licenciado sob a Licença MIT - consulte o arquivo LICENSE.md pa
 ## Contato
 
 Para qualquer dúvida ou problema, entre em contato com `m4rt1ns.jose@gmail.com`.
-
-
