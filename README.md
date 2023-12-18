@@ -1,4 +1,4 @@
-# Contact Management System
+# Contact Management System - Back-end
 
 Este projeto é um sistema simples de gerenciamento de contatos desenvolvido em Node.js, com uma base de dados MySQL para armazenar informações de contato e seus números de telefone associados.
 
@@ -6,9 +6,9 @@ Este projeto é um sistema simples de gerenciamento de contatos desenvolvido em 
 
 Certifique-se de ter as seguintes dependências instaladas antes de iniciar:
 
--   Node.js (versão 16.17.0 ou superior)
+-   [Node.js](https://nodejs.org/) (versão 16.17.0 ou superior)
 -   MySQL (versão 8.0.35 ou superior)
--   Pacotes npm (Node Package Manager)
+-   Pacotes [npm](https://www.npmjs.com/) (Node Package Manager)
 
 ## Instruções de Configuração
 
@@ -42,7 +42,7 @@ cd contacts-backend
  npm install
 ```
 
-6. Configure as variáveis de ambiente. Renomeie o arquivo `.env.example` para `.env` e preencha as informações necessárias, como segredos para tokens JWT e configurações de banco de dados.
+6. Configure as variáveis de ambiente. Renomeie o arquivo `.env.example` para `.env` e preencha as informações necessárias.
 
 7. Inicie o microserviço:
 
@@ -78,13 +78,7 @@ Acesse a API para gerenciar contatos e números de telefone.
 
 ## Contribuição
 
-Sinta-se à vontade para contribuir com melhorias, correções de bugs ou novos recursos para este microserviço. Basta seguir estas etapas:
-
-1. Faça um fork no repositório.
-2. Troque a branch atual para a de desenvolvimento.
-3. Crie uma branch para sua contribuição: git checkout -b feature/nova-funcionalidade.
-4. Faça as alterações necessárias e adicione testes, se aplicável.
-5. Envie um pull request para a branch de desenvolvimento.
+Contribuições são bem-vindas! Se encontrar algum problema ou tiver sugestões, por favor, abra uma [issue](https://github.com/JoseEduardoMartins/contacts-backend/issues/new).
 
 ## Autor
 
