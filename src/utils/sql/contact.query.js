@@ -7,7 +7,7 @@ export const contactParameters = {
     },
     name: (value) => {
         if (!typeValidators(value, 'string')) throw new Error(`Filter { name: '${value}' } must be a string`);
-        return `name = '${value}'`;
+        return `name LIKE '%${value}%'`;
     },
     age: (value) => {
         if (!typeValidators(value, 'number')) throw new Error(`Filter { age: ${value} } must be a number`);
