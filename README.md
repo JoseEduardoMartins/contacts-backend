@@ -29,13 +29,13 @@ cd contacts-backend
 docker-compose up --build
 ```
 
+O servidor estará disponível em [http://localhost:3000](http://localhost:3000).
+
 3.1 Inicie o microserviço (Produção):
 
 ```bash
  docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --build
 ```
-
-O servidor estará disponível em [http://localhost:3000](http://localhost:3000).
 
 ## Uso
 
