@@ -6,8 +6,8 @@ Este projeto é um sistema simples de gerenciamento de contatos desenvolvido em 
 
 Certifique-se de ter as seguintes dependências instaladas antes de iniciar:
 
--   [Node.js](https://nodejs.org/) (versão 16.17.0 ou superior)
 -   Pacotes [npm](https://www.npmjs.com/) (Node Package Manager)
+-   [Node.js](https://nodejs.org/) (versão 16.0.0 ou superior)
 -   [Docker](https://docs.docker.com/get-docker/)
 -   [Docker Compose](https://docs.docker.com/compose/install/)
 
