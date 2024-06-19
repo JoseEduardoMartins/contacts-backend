@@ -9,8 +9,15 @@
         "start:prod": "node src/server.js",
         "format": "npx prettier --write ."
     },
-    "author": "",
-    "license": "ISC",
+    "keywords": [
+        "Node",
+        "Express",
+        "contatos",
+        "cadastro",
+        "edição"
+    ],
+    "author": "José Eduardo Martins",
+    "license": "MIT",
     "dependencies": {
         "cors": "^2.8.5",
         "dotenv": "^16.3.1",
