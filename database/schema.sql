@@ -24,7 +24,6 @@ CREATE TABLE IF NOT EXISTS `contacts_db`.`contact` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
-
 -- -----------------------------------------------------
 -- Table `contacts_db`.`phone`
 -- -----------------------------------------------------
@@ -32,15 +31,14 @@ CREATE TABLE IF NOT EXISTS `contacts_db`.`phone` (
   `id` INT(14) NOT NULL AUTO_INCREMENT,
   `number` VARCHAR(16) NULL,
   `contact_id` INT(14) NOT NULL,
-  PRIMARY KEY (`id`, `contact_id`),
-  INDEX `fk_phone_contact_idx` (`contact_id` ASC) VISIBLE,
+  PRIMARY KEY (`id`),
+  INDEX `fk_phone_contact_idx` (`contact_id` ASC),
   CONSTRAINT `fk_phone_contact`
     FOREIGN KEY (`contact_id`)
     REFERENCES `contacts_db`.`contact` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
-
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+
+  contacts-backend:
+    container_name: "contacts-backend"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+        APP_PORT: 3000
+        APP_PATH: "/api"
+        DATABASE_HOST: db
+        DATABASE_USER: "root"
+        DATABASE_PASSWORD: "root"
+        DATABASE_NAME: "contacts_db"
+    depends_on:
+      - db
+
+  db:
+    container_name: "contacts-db"
+    image: mysql:5.7
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: contacts_db
+    volumes:
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/init.sql
