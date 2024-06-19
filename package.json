@@ -5,7 +5,8 @@
     "description": "",
     "main": "./src/server.js",
     "scripts": {
-        "dev": "nodemon --experimental-specifier-resolution=node src/server.js",
+        "start:dev": "nodemon --experimental-specifier-resolution=node src/server.js",
+        "start:prod": "node src/server.js",
         "format": "npx prettier --write ."
     },
     "author": "",

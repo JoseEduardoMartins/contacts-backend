@@ -7,8 +7,9 @@ Este projeto é um sistema simples de gerenciamento de contatos desenvolvido em 
 Certifique-se de ter as seguintes dependências instaladas antes de iniciar:
 
 -   [Node.js](https://nodejs.org/) (versão 16.17.0 ou superior)
--   MySQL (versão 8.0.35 ou superior)
 -   Pacotes [npm](https://www.npmjs.com/) (Node Package Manager)
+-   [Docker](https://docs.docker.com/get-docker/)
+-   [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## Instruções de Configuração
 
@@ -20,37 +21,15 @@ git clone https://github.com/JoseEduardoMartins/contacts-backend.git
 cd contacts-backend
 ```
 
-2. Criar o Banco de Dados e adicionar Dados Iniciais:
+2. Certifique-se de configurar corretamente as variáveis de ambiente no arquivo docker-compose.yml para conectar ao banco de dados.
 
-    - Se você ainda não o tiver instalado, siga as instruções na [documentação oficial](https://www.mysql.com/downloads/) para instalar o MySQL.
-
-    - Abra um terminal e execute o seguinte comando para criar um banco de dados e aplicar a estrutura inicial a partir do arquivo `schema.sql`:
-
-        ```
-        mysql -u seu_usuario -p sua_senha -h seu_host < ./database/schema.sql
-
-        ```
-
-    - Se você tiver um arquivo `seeds.sql` com dados iniciais, execute o seguinte comando para adicioná-los:
-        ```
-        mysql -u seu_usuario -p sua_senha -h seu_host < ./database/seed.sql
-        ```
-
-3. Instale as dependências:
+3. Inicie o microserviço:
 
 ```bash
- npm install
+docker-compose up --build
 ```
 
-6. Configure as variáveis de ambiente. Renomeie o arquivo `.env.example` para `.env` e preencha as informações necessárias.
-
-7. Inicie o microserviço:
-
-```bash
-npm run dev
-```
-
-O servidor estará disponível em http://localhost:3000.
+O servidor estará disponível em [http://localhost:3000](http://localhost:3000).
 
 ## Uso
 
