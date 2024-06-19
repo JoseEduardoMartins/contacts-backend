@@ -2,7 +2,7 @@
     "name": "contacts-backend",
     "version": "1.0.0",
     "type": "module",
-    "description": "",
+    "description": "Este repositório contém uma aplicação backend construída com Node.js e Express, junto com um contêiner MySQL para o banco de dados.",
     "main": "./src/server.js",
     "scripts": {
         "start:dev": "nodemon --experimental-specifier-resolution=node src/server.js",
