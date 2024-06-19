@@ -23,10 +23,16 @@ cd contacts-backend
 
 2. Certifique-se de configurar corretamente as variáveis de ambiente no arquivo docker-compose.yml para conectar ao banco de dados.
 
-3. Inicie o microserviço:
+3. Inicie o microserviço (Desenvolvimento):
 
 ```bash
 docker-compose up --build
+```
+
+3.1 Inicie o microserviço (Produção):
+
+```bash
+ docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --build
 ```
 
 O servidor estará disponível em [http://localhost:3000](http://localhost:3000).
