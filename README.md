@@ -101,12 +101,6 @@ cd contacts-backend
     docker-compose up --build
     ```
 
-- Observe o código-fonte e reconstrua/atualize contêineres quando os arquivos forem atualizados:
-
-    ```bash
-    docker-compose up --watch
-    ```
-
 - Interrompe contêineres e remove contêineres, redes, volumes e imagens criadas pelo `up`:
 
     ```bash
