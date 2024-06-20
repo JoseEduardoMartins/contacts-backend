@@ -29,7 +29,7 @@ cd contacts-backend
 
 ### 2. Configurar ambiente.
 
-#### Opção 1: Adicionar Dados Iniciais e Configurar Banco de Dados Local
+#### Opção 1: Local
 
 - Instale as dependências:
 
@@ -116,7 +116,6 @@ cd contacts-backend
     ```
 
 O servidor estará disponível em http://localhost:3000/api.
-
 
 ## Uso
 
