@@ -6,11 +6,9 @@ Este projeto é um sistema simples de gerenciamento de contatos desenvolvido em 
 
 Certifique-se de ter as seguintes dependências instaladas antes de iniciar:
 
+Opção 1
 -   [Node.js](https://nodejs.org/) (versão 16.0.0 ou superior)
 -   Pacotes [npm](https://www.npmjs.com/) (Node Package Manager)
-
-Opção 1
-
 -   [MySQL](https://www.mysql.com/downloads/) (versão 8.0.35 ou superior)
 
 Opção 2
