@@ -42,7 +42,7 @@ APP_PATH=/api
 
 - Se você ainda não o tiver instalado, siga as instruções na [documentação oficial](https://www.mysql.com/downloads/) para instalar o MySQL.
 
-- Configure as credenciais do banco de dados no arquivo `.env`:
+- Adicione as credenciais do banco de dados no arquivo `.env`:
 
     ```bash
     DB_HOST=localhost
@@ -67,7 +67,7 @@ APP_PATH=/api
 
 - Certifique-se de que o [Docker](https://docs.docker.com/get-docker/) e o [Docker Compose](https://docs.docker.com/compose/install/) estão instalados e rodando em sua máquina.
 
-- Adicione no arquivo `.env` o seguinte conteúdo:
+- Adicione as credenciais do banco de dados no arquivo `.env`:
 
     ```bash
     DB_HOST=db
