@@ -29,7 +29,13 @@ cd contacts-backend
 
 ### 2. Configurar ambiente.
 
-#### Opção 1: Adicionar Dados Iniciais e Configurar Banco de Dados Local 
+#### Opção 1: Adicionar Dados Iniciais e Configurar Banco de Dados Local
+
+- Instale as dependências:
+
+    ```bash
+    npm install
+    ```
 
 - Criar um arquivo `.env` na raiz do projeto com base no `.env.example` e mude as variaveis se necessario.
 
