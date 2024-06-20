@@ -27,18 +27,16 @@ git clone https://github.com/JoseEduardoMartins/contacts-backend.git
 cd contacts-backend
 ```
 
-### 2. Configurar as variáveis de ambiente.
+### 2. Configurar ambiente.
 
-Criar um arquivo `.env` na raiz do projeto com base no `.env.example` e mude as variaveis se necessario.
+#### Opção 1: Adicionar Dados Iniciais e Configurar Banco de Dados Local 
 
-```bash
-APP_PORT=3000
-APP_PATH=/api
-```
+- Criar um arquivo `.env` na raiz do projeto com base no `.env.example` e mude as variaveis se necessario.
 
-### 3. Configurar o Banco de Dados
-
-#### Opção 1: Criar o Banco de Dados e adicionar Dados Iniciais:
+    ```bash
+    APP_PORT=3000
+    APP_PATH=/api
+    ```
 
 - Se você ainda não o tiver instalado, siga as instruções na [documentação oficial](https://www.mysql.com/downloads/) para instalar o MySQL.
 
@@ -67,14 +65,7 @@ APP_PATH=/api
 
 - Certifique-se de que o [Docker](https://docs.docker.com/get-docker/) e o [Docker Compose](https://docs.docker.com/compose/install/) estão instalados e rodando em sua máquina.
 
-- Adicione as credenciais do banco de dados no arquivo `.env`:
-
-    ```bash
-    DB_HOST=db
-    DB_USER=root
-    DB_PASSWORD=root
-    DB_NAME=contacts_db
-    ```
+- Certifique-se de configurar corretamente as variáveis de ambiente no arquivo `docker-compose.yml` para conectar ao banco de dados.
 
 ### 4. Executar a Aplicação
 
