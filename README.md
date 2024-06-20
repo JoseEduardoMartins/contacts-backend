@@ -69,7 +69,7 @@ cd contacts-backend
 
 ### 4. Executar a Aplicação
 
-#### Opção 1: Modo Desenvolvimento (Local)
+#### Opção 1: Local
 
 - Inicie a aplicação:
 
